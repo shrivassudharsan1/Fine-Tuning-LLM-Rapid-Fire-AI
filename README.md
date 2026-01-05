@@ -1,9 +1,10 @@
-GPT-2 SFT with RapidFireAI
+# GPT-2 SFT with RapidFireAI
+Notebook: https://colab.research.google.com/drive/1nwNZhq_ZzirzEojIZTnw1bsxYJ2Ygajz?usp=sharing
 
-Description:
+## Description:
 Fine-tunes GPT-2 using Supervised Fine-Tuning (SFT) with LoRA adapters on a customer support chatbot dataset (Bitext). A reduced subset was used for Colab: 80 training examples and 20 evaluation examples. RapidFireAI was used to explore multiple hyperparameter and LoRA configurations, optimizing both token-level accuracy (eval loss) and sequence-level output quality (RogueL).
 
-Dataset
+## Dataset
 
 Source: Bitext Customer Support Chatbot Dataset
 
@@ -21,7 +22,7 @@ Hyperparameters varied: rank (r), lora_alpha, lora_dropout, learning rate, and s
 
 Training checkpoints evaluated with smoothed metrics for optimal early stopping
 
-Results
+## Results
 
 Best Configuration (Config 1) at step 64:
 
@@ -35,7 +36,7 @@ Train loss (step 65): 1.356
 
 Step 64 selected because it balances token-level accuracy and sequence-level output quality, avoiding overfitting observed at later steps
 
-Usage
+## Usage
 
 Open the Colab notebook
  to run the experiments
