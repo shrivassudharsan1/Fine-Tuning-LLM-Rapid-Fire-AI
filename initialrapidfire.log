@@ -1,0 +1,1245 @@
+2026-01-03 22:05:07 | tensorboard-demo-1 | experiment | INFO | experiment.py:95 | Experiment tensorboard-demo-1 created with Experiment ID: 1 at /content/rapidfireai/rapidfire_experiments/tensorboard-demo-1 (TensorBoard-only mode)
+2026-01-03 22:05:07 | tensorboard-demo-1 | experiment | INFO | experiment.py:97 | Running RapidFire AI version 0.12.8
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:71 | Found 1 workers/GPUs.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:95 | Controller initialized
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:458 | Set experiment task to Create Models.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:469 | Saved datasets to /content/rapidfireai/rapidfire_experiments/tensorboard-demo-1/datasets.dill
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | INFO | controller.py:475 | Set seed to 42
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 1.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 2.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 3.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 4.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | INFO | controller.py:178 | Created 4 runs - 
+{   1: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 32,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    2: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 64,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 32,
+           'peft_params.target_modules': ['c_attn', 'c_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    3: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 32,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none',
+           'training_args.warmup_steps': 10},
+    4: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 64,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 32,
+           'peft_params.target_modules': ['c_attn', 'c_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none',
+           'training_args.warmup_steps': 10}}
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:179 | Got 4 runs for Initial.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:183 | Completed creating models.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:487 | Created models.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:493 | Set experiment task to Training and Validation.
+2026-01-03 22:06:23 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:109 | Creating 1 worker processes...
+2026-01-03 22:06:23 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:117 | Cannot create process group (restricted environment) - will use individual process termination
+2026-01-03 22:06:23 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:140 | Started Worker 0 with PID 6730
+2026-01-03 22:06:23 | tensorboard-demo-1 | worker_manager | INFO | worker_manager.py:147 | Started 1 worker processes successfully
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:499 | Created 1 workers.
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | INFO | controller.py:514 | Starting Training and Validation
+2026-01-03 22:06:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-03 22:06:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:75 | Worker 0 initialized with PID 6730
+2026-01-03 22:06:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:108 | Loaded datasets
+2026-01-03 22:06:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:06:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 0
+2026-01-03 22:07:50 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:278 | Saved base_model for run gpt2
+2026-01-03 22:07:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 0
+2026-01-03 22:08:24 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:08:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-03 22:08:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 0
+2026-01-03 22:08:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 0 on worker 0
+2026-01-03 22:08:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 5/64
+2026-01-03 22:08:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-03 22:08:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:08:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 0
+2026-01-03 22:08:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 0
+2026-01-03 22:08:48 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:08:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-03 22:08:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 0
+2026-01-03 22:08:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 0 on worker 0
+2026-01-03 22:08:49 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 5/64
+2026-01-03 22:08:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-03 22:08:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:08:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 0
+2026-01-03 22:08:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 0
+2026-01-03 22:09:12 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:09:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-03 22:09:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 0
+2026-01-03 22:09:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 0 on worker 0
+2026-01-03 22:09:13 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 5/64
+2026-01-03 22:09:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-03 22:09:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:09:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 0
+2026-01-03 22:09:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 0
+2026-01-03 22:09:34 | tensorboard-demo-1 | dispatcher | INFO | dispatcher.py:230 | Received clone-modify task with warm start False for run_id 3
+2026-01-03 22:09:35 | tensorboard-demo-1 | interactive-control | INFO | controller.py:359 | Added ControllerTask.IC_CLONE_MODIFY task for run 3.
+2026-01-03 22:09:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 5.
+2026-01-03 22:09:35 | tensorboard-demo-1 | controller | INFO | controller.py:178 | Created 1 runs - 
+{   5: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 64,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none',
+           'training_args.warmup_steps': 10}}
+2026-01-03 22:09:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:179 | Got 1 runs for Interactive Control.
+2026-01-03 22:09:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:183 | Completed creating models.
+2026-01-03 22:09:35 | tensorboard-demo-1 | interactive-control | INFO | controller.py:319 | Cloned run 3 by Interactive Control with Interactive Control Clone Modify into runs - [5]
+2026-01-03 22:09:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:640 | Added run 5 to scheduler with 0 chunks visited
+2026-01-03 22:09:41 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:09:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-03 22:09:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 0
+2026-01-03 22:09:42 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 0 on worker 0
+2026-01-03 22:09:42 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 5/64
+2026-01-03 22:09:42 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-03 22:09:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:09:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 0
+2026-01-03 22:09:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 0
+2026-01-03 22:10:08 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:10:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-03 22:10:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 0
+2026-01-03 22:10:09 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 0 on worker 0
+2026-01-03 22:10:09 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 5/64
+2026-01-03 22:10:09 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 1
+2026-01-03 22:10:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:10:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 1
+2026-01-03 22:10:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 1
+2026-01-03 22:10:29 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:10:29 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-01-03 22:10:30 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 1
+2026-01-03 22:10:31 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 1 on worker 0
+2026-01-03 22:10:31 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 10/64
+2026-01-03 22:10:31 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 1
+2026-01-03 22:10:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:10:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 1
+2026-01-03 22:10:32 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 1
+2026-01-03 22:10:55 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:10:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 1
+2026-01-03 22:10:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 1
+2026-01-03 22:10:57 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 1 on worker 0
+2026-01-03 22:10:57 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 10/64
+2026-01-03 22:10:57 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 1
+2026-01-03 22:10:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:10:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 1
+2026-01-03 22:10:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 1
+2026-01-03 22:11:16 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:11:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 1
+2026-01-03 22:11:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 1
+2026-01-03 22:11:18 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 1 on worker 0
+2026-01-03 22:11:18 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 10/64
+2026-01-03 22:11:18 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 1
+2026-01-03 22:11:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:11:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 1
+2026-01-03 22:11:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 1
+2026-01-03 22:11:43 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:11:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 1
+2026-01-03 22:11:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 1
+2026-01-03 22:11:44 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 1 on worker 0
+2026-01-03 22:11:44 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 10/64
+2026-01-03 22:11:44 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 1
+2026-01-03 22:11:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:11:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 1
+2026-01-03 22:11:45 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 1
+2026-01-03 22:12:05 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:12:06 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 1
+2026-01-03 22:12:06 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 1
+2026-01-03 22:12:07 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 1 on worker 0
+2026-01-03 22:12:07 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 10/64
+2026-01-03 22:12:07 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 2
+2026-01-03 22:12:07 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:12:07 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 2
+2026-01-03 22:12:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 2
+2026-01-03 22:12:24 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:12:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-01-03 22:12:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 2
+2026-01-03 22:12:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 2 on worker 0
+2026-01-03 22:12:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 15/64
+2026-01-03 22:12:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 2
+2026-01-03 22:12:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:12:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 2
+2026-01-03 22:12:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 2
+2026-01-03 22:12:42 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:12:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 2
+2026-01-03 22:12:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 2
+2026-01-03 22:12:43 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 2 on worker 0
+2026-01-03 22:12:43 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 15/64
+2026-01-03 22:12:43 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 2
+2026-01-03 22:12:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:12:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 2
+2026-01-03 22:12:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 2
+2026-01-03 22:13:02 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:13:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 2
+2026-01-03 22:13:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 2
+2026-01-03 22:13:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 2 on worker 0
+2026-01-03 22:13:03 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 15/64
+2026-01-03 22:13:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 2
+2026-01-03 22:13:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:13:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 2
+2026-01-03 22:13:05 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 2
+2026-01-03 22:13:22 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:13:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 2
+2026-01-03 22:13:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 2
+2026-01-03 22:13:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 2 on worker 0
+2026-01-03 22:13:23 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 15/64
+2026-01-03 22:13:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 2
+2026-01-03 22:13:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:13:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 2
+2026-01-03 22:13:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 2
+2026-01-03 22:13:40 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:13:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 2
+2026-01-03 22:13:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 2
+2026-01-03 22:13:41 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 2 on worker 0
+2026-01-03 22:13:41 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 15/64
+2026-01-03 22:13:41 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 3
+2026-01-03 22:13:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:13:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 3
+2026-01-03 22:13:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 3
+2026-01-03 22:14:14 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:14:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-01-03 22:14:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 3
+2026-01-03 22:14:15 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 3 on worker 0
+2026-01-03 22:14:15 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 20/64
+2026-01-03 22:14:15 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 1 has completed epoch (4/4 chunks)
+2026-01-03 22:14:15 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-03 22:14:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:14:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 0
+2026-01-03 22:14:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 0
+2026-01-03 22:14:19 | tensorboard-demo-1 | dispatcher | INFO | dispatcher.py:292 | Received resume task for run_id: 2
+2026-01-03 22:14:20 | tensorboard-demo-1 | interactive-control | INFO | controller.py:415 | Received RESUME task for run 2
+2026-01-03 22:14:20 | tensorboard-demo-1 | interactive-control | INFO | controller.py:254 | Resuming run 2 by Interactive Control
+2026-01-03 22:14:38 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:14:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-03 22:14:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 0
+2026-01-03 22:14:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 0 on worker 0
+2026-01-03 22:14:39 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 25/64
+2026-01-03 22:14:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 1
+2026-01-03 22:14:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:14:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 1
+2026-01-03 22:14:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 1
+2026-01-03 22:15:02 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:15:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-01-03 22:15:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 1
+2026-01-03 22:15:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 1 on worker 0
+2026-01-03 22:15:03 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 30/64
+2026-01-03 22:15:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 2
+2026-01-03 22:15:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:15:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 2
+2026-01-03 22:15:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 2
+2026-01-03 22:15:23 | tensorboard-demo-1 | dispatcher | INFO | dispatcher.py:230 | Received clone-modify task with warm start False for run_id 2
+2026-01-03 22:15:23 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:15:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-01-03 22:15:23 | tensorboard-demo-1 | interactive-control | INFO | controller.py:359 | Added ControllerTask.IC_CLONE_MODIFY task for run 2.
+2026-01-03 22:15:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 6.
+2026-01-03 22:15:23 | tensorboard-demo-1 | controller | INFO | controller.py:178 | Created 1 runs - 
+{   6: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 64,
+           'peft_params.lora_dropout': 0.05,
+           'peft_params.r': 32,
+           'peft_params.target_modules': ['c_attn', 'c_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'cosine',
+           'training_args.max_steps': 128,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'}}
+2026-01-03 22:15:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:179 | Got 1 runs for Interactive Control.
+2026-01-03 22:15:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:183 | Completed creating models.
+2026-01-03 22:15:23 | tensorboard-demo-1 | interactive-control | INFO | controller.py:319 | Cloned run 2 by Interactive Control with Interactive Control Clone Modify into runs - [6]
+2026-01-03 22:15:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:640 | Added run 6 to scheduler with 0 chunks visited
+2026-01-03 22:15:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 2
+2026-01-03 22:15:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 2 on worker 0
+2026-01-03 22:15:24 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 35/64
+2026-01-03 22:15:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:15:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:15:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:15:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:15:47 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:15:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:15:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:15:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:15:48 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 5/128
+2026-01-03 22:15:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:15:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:15:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:15:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:16:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:16:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:16:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:16:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:16:16 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 10/128
+2026-01-03 22:16:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:16:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:16:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:16:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:16:36 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:16:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:16:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:16:37 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:16:37 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 15/128
+2026-01-03 22:16:37 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 3
+2026-01-03 22:16:37 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:16:37 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 3
+2026-01-03 22:16:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 3
+2026-01-03 22:17:06 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:17:06 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-01-03 22:17:07 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 3
+2026-01-03 22:17:07 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 3 on worker 0
+2026-01-03 22:17:07 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 40/64
+2026-01-03 22:17:07 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 1 has completed epoch (4/4 chunks)
+2026-01-03 22:17:07 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-03 22:17:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:17:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 0
+2026-01-03 22:17:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 0
+2026-01-03 22:17:26 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:17:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-03 22:17:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 0
+2026-01-03 22:17:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 0 on worker 0
+2026-01-03 22:17:27 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 45/64
+2026-01-03 22:17:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 1
+2026-01-03 22:17:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:17:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 1
+2026-01-03 22:17:28 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 1
+2026-01-03 22:17:48 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:17:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-01-03 22:17:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 1
+2026-01-03 22:17:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 1 on worker 0
+2026-01-03 22:17:49 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 50/64
+2026-01-03 22:17:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 2
+2026-01-03 22:17:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:17:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 2
+2026-01-03 22:17:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 2
+2026-01-03 22:18:07 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:18:07 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-01-03 22:18:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 2
+2026-01-03 22:18:08 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 2 on worker 0
+2026-01-03 22:18:08 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 55/64
+2026-01-03 22:18:08 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 3
+2026-01-03 22:18:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:18:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 3
+2026-01-03 22:18:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 3
+2026-01-03 22:18:47 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:18:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-01-03 22:18:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 3
+2026-01-03 22:18:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 3 on worker 0
+2026-01-03 22:18:48 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 60/64
+2026-01-03 22:18:48 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 1 has completed epoch (4/4 chunks)
+2026-01-03 22:18:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-03 22:18:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-03 22:18:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 1 with chunk 0
+2026-01-03 22:18:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 1 on chunk 0
+2026-01-03 22:19:10 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:19:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-03 22:19:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 1 on chunk 0
+2026-01-03 22:19:10 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 1, chunk 0 on worker 0
+2026-01-03 22:19:10 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 1 completed steps - 64/64
+2026-01-03 22:19:10 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 1 has completed all its epochs - steps 64/64
+2026-01-03 22:19:10 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 3
+2026-01-03 22:19:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:19:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 3
+2026-01-03 22:19:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 3
+2026-01-03 22:19:55 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:19:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 3
+2026-01-03 22:19:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 3
+2026-01-03 22:19:56 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 3 on worker 0
+2026-01-03 22:19:56 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 20/64
+2026-01-03 22:19:56 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 2 has completed epoch (4/4 chunks)
+2026-01-03 22:19:56 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-03 22:19:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:19:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 0
+2026-01-03 22:19:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 0
+2026-01-03 22:20:23 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:20:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-03 22:20:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 0
+2026-01-03 22:20:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 0 on worker 0
+2026-01-03 22:20:24 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 25/64
+2026-01-03 22:20:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 1
+2026-01-03 22:20:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:20:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 1
+2026-01-03 22:20:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 1
+2026-01-03 22:20:56 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:20:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 1
+2026-01-03 22:20:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 1
+2026-01-03 22:20:58 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 1 on worker 0
+2026-01-03 22:20:58 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 30/64
+2026-01-03 22:20:58 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 2
+2026-01-03 22:20:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:20:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 2
+2026-01-03 22:20:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 2
+2026-01-03 22:21:30 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:21:30 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 2
+2026-01-03 22:21:30 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 2
+2026-01-03 22:21:31 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 2 on worker 0
+2026-01-03 22:21:31 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 35/64
+2026-01-03 22:21:31 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 3
+2026-01-03 22:21:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:21:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 3
+2026-01-03 22:21:33 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 3
+2026-01-03 22:22:23 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:22:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 3
+2026-01-03 22:22:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 3
+2026-01-03 22:22:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 3 on worker 0
+2026-01-03 22:22:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 40/64
+2026-01-03 22:22:25 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 2 has completed epoch (4/4 chunks)
+2026-01-03 22:22:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-03 22:22:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:22:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 0
+2026-01-03 22:22:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 0
+2026-01-03 22:22:53 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:22:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-03 22:22:54 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 0
+2026-01-03 22:22:54 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 0 on worker 0
+2026-01-03 22:22:54 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 45/64
+2026-01-03 22:22:54 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 1
+2026-01-03 22:22:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:22:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 1
+2026-01-03 22:22:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 1
+2026-01-03 22:23:24 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:23:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 1
+2026-01-03 22:23:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 1
+2026-01-03 22:23:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 1 on worker 0
+2026-01-03 22:23:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 50/64
+2026-01-03 22:23:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 2
+2026-01-03 22:23:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:23:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 2
+2026-01-03 22:23:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 2
+2026-01-03 22:23:56 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:23:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 2
+2026-01-03 22:23:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 2
+2026-01-03 22:23:57 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 2 on worker 0
+2026-01-03 22:23:57 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 55/64
+2026-01-03 22:23:57 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 3
+2026-01-03 22:23:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:23:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 3
+2026-01-03 22:24:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 3
+2026-01-03 22:24:47 | tensorboard-demo-1 | dispatcher | INFO | dispatcher.py:230 | Received clone-modify task with warm start False for run_id 1
+2026-01-03 22:24:47 | tensorboard-demo-1 | interactive-control | INFO | controller.py:359 | Added ControllerTask.IC_CLONE_MODIFY task for run 1.
+2026-01-03 22:24:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:164 | Populated MLFlow with model config info for run 7.
+2026-01-03 22:24:47 | tensorboard-demo-1 | controller | INFO | controller.py:178 | Created 1 runs - 
+{   7: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 32,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0005,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 64,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'}}
+2026-01-03 22:24:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:179 | Got 1 runs for Interactive Control.
+2026-01-03 22:24:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:183 | Completed creating models.
+2026-01-03 22:24:47 | tensorboard-demo-1 | interactive-control | INFO | controller.py:319 | Cloned run 1 by Interactive Control with Interactive Control Clone Modify into runs - [7]
+2026-01-03 22:24:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:640 | Added run 7 to scheduler with 0 chunks visited
+2026-01-03 22:24:59 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:24:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 3
+2026-01-03 22:24:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 3
+2026-01-03 22:25:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 3 on worker 0
+2026-01-03 22:25:00 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 60/64
+2026-01-03 22:25:00 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 2 has completed epoch (4/4 chunks)
+2026-01-03 22:25:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-03 22:25:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-03 22:25:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 2 with chunk 0
+2026-01-03 22:25:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 2 on chunk 0
+2026-01-03 22:25:34 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:25:34 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-03 22:25:35 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 2 on chunk 0
+2026-01-03 22:25:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 2, chunk 0 on worker 0
+2026-01-03 22:25:35 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 2 completed steps - 64/64
+2026-01-03 22:25:35 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 2 has completed all its epochs - steps 64/64
+2026-01-03 22:25:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-03 22:25:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:25:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 0
+2026-01-03 22:25:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 0
+2026-01-03 22:25:55 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-03 22:25:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-03 22:25:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 0
+2026-01-03 22:25:56 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 0 on worker 0
+2026-01-03 22:25:56 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 5/64
+2026-01-03 22:25:56 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 1
+2026-01-03 22:25:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:25:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 1
+2026-01-03 22:25:57 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 1
+2026-01-03 22:26:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:26:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 1
+2026-01-03 22:26:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 1
+2026-01-03 22:26:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 1 on worker 0
+2026-01-03 22:26:16 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 10/64
+2026-01-03 22:26:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 2
+2026-01-03 22:26:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:26:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 2
+2026-01-03 22:26:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 2
+2026-01-03 22:26:38 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:26:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 2
+2026-01-03 22:26:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 2
+2026-01-03 22:26:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 2 on worker 0
+2026-01-03 22:26:40 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 15/64
+2026-01-03 22:26:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 3
+2026-01-03 22:26:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:26:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 3
+2026-01-03 22:26:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 3
+2026-01-03 22:27:11 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:27:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 3
+2026-01-03 22:27:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 3
+2026-01-03 22:27:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 3 on worker 0
+2026-01-03 22:27:12 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 20/64
+2026-01-03 22:27:12 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 3 has completed epoch (4/4 chunks)
+2026-01-03 22:27:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-03 22:27:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:27:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 0
+2026-01-03 22:27:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 0
+2026-01-03 22:27:34 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:27:34 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-03 22:27:35 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 0
+2026-01-03 22:27:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 0 on worker 0
+2026-01-03 22:27:35 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 25/64
+2026-01-03 22:27:35 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 1
+2026-01-03 22:27:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:27:36 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 1
+2026-01-03 22:27:37 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 1
+2026-01-03 22:27:58 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:27:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 1
+2026-01-03 22:27:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 1
+2026-01-03 22:27:59 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 1 on worker 0
+2026-01-03 22:27:59 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 30/64
+2026-01-03 22:27:59 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 2
+2026-01-03 22:28:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:28:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 2
+2026-01-03 22:28:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 2
+2026-01-03 22:28:18 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:28:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 2
+2026-01-03 22:28:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 2
+2026-01-03 22:28:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 2 on worker 0
+2026-01-03 22:28:19 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 35/64
+2026-01-03 22:28:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 3
+2026-01-03 22:28:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:28:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 3
+2026-01-03 22:28:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 3
+2026-01-03 22:28:52 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:28:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 3
+2026-01-03 22:28:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 3
+2026-01-03 22:28:52 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 3 on worker 0
+2026-01-03 22:28:52 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 40/64
+2026-01-03 22:28:52 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 3 has completed epoch (4/4 chunks)
+2026-01-03 22:28:52 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-03 22:28:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:28:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 0
+2026-01-03 22:28:54 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 0
+2026-01-03 22:29:11 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:29:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-03 22:29:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 0
+2026-01-03 22:29:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 0 on worker 0
+2026-01-03 22:29:13 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 45/64
+2026-01-03 22:29:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 1
+2026-01-03 22:29:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:29:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 1
+2026-01-03 22:29:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 1
+2026-01-03 22:29:31 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:29:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 1
+2026-01-03 22:29:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 1
+2026-01-03 22:29:32 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 1 on worker 0
+2026-01-03 22:29:32 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 50/64
+2026-01-03 22:29:32 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 2
+2026-01-03 22:29:32 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:29:32 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 2
+2026-01-03 22:29:33 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 2
+2026-01-03 22:29:48 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:29:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 2
+2026-01-03 22:29:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 2
+2026-01-03 22:29:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 2 on worker 0
+2026-01-03 22:29:50 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 55/64
+2026-01-03 22:29:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 3
+2026-01-03 22:29:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:29:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 3
+2026-01-03 22:29:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 3
+2026-01-03 22:30:19 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:30:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 3
+2026-01-03 22:30:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 3
+2026-01-03 22:30:21 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 3 on worker 0
+2026-01-03 22:30:21 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 60/64
+2026-01-03 22:30:21 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 3 has completed epoch (4/4 chunks)
+2026-01-03 22:30:21 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-03 22:30:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-03 22:30:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 3 with chunk 0
+2026-01-03 22:30:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 3 on chunk 0
+2026-01-03 22:30:37 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:30:37 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-03 22:30:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 3 on chunk 0
+2026-01-03 22:30:38 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 3, chunk 0 on worker 0
+2026-01-03 22:30:38 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 3 completed steps - 64/64
+2026-01-03 22:30:38 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 3 has completed all its epochs - steps 64/64
+2026-01-03 22:30:38 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 3
+2026-01-03 22:30:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:30:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 3
+2026-01-03 22:30:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 3
+2026-01-03 22:31:18 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:31:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 3
+2026-01-03 22:31:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 3
+2026-01-03 22:31:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 3 on worker 0
+2026-01-03 22:31:19 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 20/64
+2026-01-03 22:31:19 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 4 has completed epoch (4/4 chunks)
+2026-01-03 22:31:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-03 22:31:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:31:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 0
+2026-01-03 22:31:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 0
+2026-01-03 22:31:41 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:31:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-03 22:31:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 0
+2026-01-03 22:31:42 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 0 on worker 0
+2026-01-03 22:31:42 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 25/64
+2026-01-03 22:31:42 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 1
+2026-01-03 22:31:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:31:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 1
+2026-01-03 22:31:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 1
+2026-01-03 22:32:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:32:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 1
+2026-01-03 22:32:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 1
+2026-01-03 22:32:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 1 on worker 0
+2026-01-03 22:32:16 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 30/64
+2026-01-03 22:32:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 2
+2026-01-03 22:32:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:32:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 2
+2026-01-03 22:32:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 2
+2026-01-03 22:32:50 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:32:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 2
+2026-01-03 22:32:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 2
+2026-01-03 22:32:51 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 2 on worker 0
+2026-01-03 22:32:51 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 35/64
+2026-01-03 22:32:51 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 3
+2026-01-03 22:32:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:32:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 3
+2026-01-03 22:32:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 3
+2026-01-03 22:33:49 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:33:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 3
+2026-01-03 22:33:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 3
+2026-01-03 22:33:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 3 on worker 0
+2026-01-03 22:33:50 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 40/64
+2026-01-03 22:33:50 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 4 has completed epoch (4/4 chunks)
+2026-01-03 22:33:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-03 22:33:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:33:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 0
+2026-01-03 22:33:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 0
+2026-01-03 22:34:19 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:34:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-03 22:34:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 0
+2026-01-03 22:34:21 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 0 on worker 0
+2026-01-03 22:34:21 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 45/64
+2026-01-03 22:34:21 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 1
+2026-01-03 22:34:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:34:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 1
+2026-01-03 22:34:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 1
+2026-01-03 22:34:49 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:34:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 1
+2026-01-03 22:34:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 1
+2026-01-03 22:34:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 1 on worker 0
+2026-01-03 22:34:50 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 50/64
+2026-01-03 22:34:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 2
+2026-01-03 22:34:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:34:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 2
+2026-01-03 22:34:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 2
+2026-01-03 22:35:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:35:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 2
+2026-01-03 22:35:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 2
+2026-01-03 22:35:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 2 on worker 0
+2026-01-03 22:35:17 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 55/64
+2026-01-03 22:35:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 3
+2026-01-03 22:35:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:35:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 3
+2026-01-03 22:35:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 3
+2026-01-03 22:36:08 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:36:08 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 3
+2026-01-03 22:36:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 3
+2026-01-03 22:36:09 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 3 on worker 0
+2026-01-03 22:36:09 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 60/64
+2026-01-03 22:36:09 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 4 has completed epoch (4/4 chunks)
+2026-01-03 22:36:09 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-03 22:36:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-03 22:36:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 4 with chunk 0
+2026-01-03 22:36:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 4 on chunk 0
+2026-01-03 22:36:38 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:36:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-03 22:36:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 4 on chunk 0
+2026-01-03 22:36:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 4, chunk 0 on worker 0
+2026-01-03 22:36:39 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 4 completed steps - 64/64
+2026-01-03 22:36:39 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 4 has completed all its epochs - steps 64/64
+2026-01-03 22:36:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 3
+2026-01-03 22:36:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:36:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 3
+2026-01-03 22:36:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 3
+2026-01-03 22:37:18 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:37:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 3
+2026-01-03 22:37:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 3
+2026-01-03 22:37:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 3 on worker 0
+2026-01-03 22:37:19 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 20/64
+2026-01-03 22:37:19 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 5 has completed epoch (4/4 chunks)
+2026-01-03 22:37:19 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-03 22:37:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:37:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 0
+2026-01-03 22:37:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 0
+2026-01-03 22:37:58 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:37:58 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-03 22:38:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 0
+2026-01-03 22:38:01 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 0 on worker 0
+2026-01-03 22:38:01 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 25/64
+2026-01-03 22:38:01 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 1
+2026-01-03 22:38:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:38:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 1
+2026-01-03 22:38:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 1
+2026-01-03 22:38:23 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:38:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 1
+2026-01-03 22:38:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 1
+2026-01-03 22:38:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 1 on worker 0
+2026-01-03 22:38:24 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 30/64
+2026-01-03 22:38:24 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 2
+2026-01-03 22:38:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:38:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 2
+2026-01-03 22:38:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 2
+2026-01-03 22:38:40 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:38:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 2
+2026-01-03 22:38:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 2
+2026-01-03 22:38:41 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 2 on worker 0
+2026-01-03 22:38:41 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 35/64
+2026-01-03 22:38:41 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 3
+2026-01-03 22:38:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:38:42 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 3
+2026-01-03 22:38:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 3
+2026-01-03 22:39:24 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:39:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 3
+2026-01-03 22:39:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 3
+2026-01-03 22:39:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 3 on worker 0
+2026-01-03 22:39:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 40/64
+2026-01-03 22:39:25 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 5 has completed epoch (4/4 chunks)
+2026-01-03 22:39:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-03 22:39:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:39:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 0
+2026-01-03 22:39:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 0
+2026-01-03 22:39:47 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:39:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-03 22:39:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 0
+2026-01-03 22:39:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 0 on worker 0
+2026-01-03 22:39:48 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 45/64
+2026-01-03 22:39:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 1
+2026-01-03 22:39:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:39:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 1
+2026-01-03 22:39:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 1
+2026-01-03 22:40:17 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:40:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 1
+2026-01-03 22:40:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 1
+2026-01-03 22:40:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 1 on worker 0
+2026-01-03 22:40:17 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 50/64
+2026-01-03 22:40:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 2
+2026-01-03 22:40:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:40:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 2
+2026-01-03 22:40:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 2
+2026-01-03 22:40:47 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:40:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 2
+2026-01-03 22:40:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 2
+2026-01-03 22:40:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 2 on worker 0
+2026-01-03 22:40:49 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 55/64
+2026-01-03 22:40:49 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 3
+2026-01-03 22:40:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:40:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 3
+2026-01-03 22:40:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 3
+2026-01-03 22:41:26 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:41:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 3
+2026-01-03 22:41:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 3
+2026-01-03 22:41:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 3 on worker 0
+2026-01-03 22:41:27 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 60/64
+2026-01-03 22:41:27 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 5 has completed epoch (4/4 chunks)
+2026-01-03 22:41:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-03 22:41:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-03 22:41:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 5 with chunk 0
+2026-01-03 22:41:28 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 5 on chunk 0
+2026-01-03 22:41:45 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:41:45 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-03 22:41:46 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 5 on chunk 0
+2026-01-03 22:41:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 5, chunk 0 on worker 0
+2026-01-03 22:41:47 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 5 completed steps - 64/64
+2026-01-03 22:41:47 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 5 has completed all its epochs - steps 64/64
+2026-01-03 22:41:47 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:41:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:41:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:41:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:42:38 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:42:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:42:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:42:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:42:39 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 20/128
+2026-01-03 22:42:39 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:42:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:42:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:42:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:42:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:43:12 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:43:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:43:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:43:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:43:12 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 25/128
+2026-01-03 22:43:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:43:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:43:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:43:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:43:47 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:43:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:43:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:43:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:43:48 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 30/128
+2026-01-03 22:43:48 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:43:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:43:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:43:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:44:21 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:44:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:44:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:44:22 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:44:22 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 35/128
+2026-01-03 22:44:22 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:44:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:44:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:44:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:45:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:45:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:45:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:45:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:45:17 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 40/128
+2026-01-03 22:45:17 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:45:17 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:45:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:45:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:45:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:45:50 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:45:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:45:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:45:51 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:45:51 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 45/128
+2026-01-03 22:45:51 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:45:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:45:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:45:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:46:26 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:46:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:46:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:46:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:46:27 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 50/128
+2026-01-03 22:46:27 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:46:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:46:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:46:29 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:47:02 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:47:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:47:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:47:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:47:03 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 55/128
+2026-01-03 22:47:03 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:47:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:47:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:47:05 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:47:53 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:47:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:47:54 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:47:54 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:47:54 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 60/128
+2026-01-03 22:47:54 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:47:54 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:47:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:47:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:47:56 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:48:17 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:48:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:48:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:48:18 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:48:18 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 65/128
+2026-01-03 22:48:18 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:48:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:48:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:48:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:48:43 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:48:43 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:48:44 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:48:45 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:48:45 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 70/128
+2026-01-03 22:48:45 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:48:45 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:48:45 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:48:46 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:49:11 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:49:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:49:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:49:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:49:13 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 75/128
+2026-01-03 22:49:13 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:49:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:49:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:49:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:49:59 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:49:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:50:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:50:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:50:00 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 80/128
+2026-01-03 22:50:00 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:50:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:50:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:50:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:50:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:50:21 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:50:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:50:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:50:22 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:50:22 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 85/128
+2026-01-03 22:50:22 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:50:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:50:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:50:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:50:45 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:50:45 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:50:46 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:50:46 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:50:46 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 90/128
+2026-01-03 22:50:46 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:50:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:50:47 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:50:48 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:51:11 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:51:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:51:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:51:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:51:12 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 95/128
+2026-01-03 22:51:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:51:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:51:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:51:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:52:01 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:52:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:52:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:52:02 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:52:02 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 100/128
+2026-01-03 22:52:02 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:52:02 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:52:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:52:03 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:52:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:52:24 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:52:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:52:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:52:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:52:25 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 105/128
+2026-01-03 22:52:25 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:52:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:52:26 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:52:27 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:52:49 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:52:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:52:49 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:52:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:52:50 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 110/128
+2026-01-03 22:52:50 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-03 22:52:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:52:50 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 2
+2026-01-03 22:52:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 2
+2026-01-03 22:53:09 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:53:09 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-03 22:53:10 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 2
+2026-01-03 22:53:10 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 2 on worker 0
+2026-01-03 22:53:10 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 115/128
+2026-01-03 22:53:10 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-03 22:53:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:53:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 3
+2026-01-03 22:53:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 3
+2026-01-03 22:53:51 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:53:51 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-03 22:53:52 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 3
+2026-01-03 22:53:53 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 3 on worker 0
+2026-01-03 22:53:53 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 120/128
+2026-01-03 22:53:53 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 6 has completed epoch (4/4 chunks)
+2026-01-03 22:53:53 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-03 22:53:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:53:53 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 0
+2026-01-03 22:53:55 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 0
+2026-01-03 22:54:15 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:54:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-03 22:54:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 0
+2026-01-03 22:54:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 0 on worker 0
+2026-01-03 22:54:16 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 125/128
+2026-01-03 22:54:16 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-03 22:54:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-03 22:54:17 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 6 with chunk 1
+2026-01-03 22:54:18 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 6 on chunk 1
+2026-01-03 22:54:39 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:288 in-place, 0 new
+2026-01-03 22:54:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-03 22:54:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 6 on chunk 1
+2026-01-03 22:54:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 6, chunk 1 on worker 0
+2026-01-03 22:54:40 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 6 completed steps - 128/128
+2026-01-03 22:54:40 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 6 has completed all its epochs - steps 128/128
+2026-01-03 22:54:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 3
+2026-01-03 22:54:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:54:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 3
+2026-01-03 22:54:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 3
+2026-01-03 22:55:19 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:55:19 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 3
+2026-01-03 22:55:20 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 3
+2026-01-03 22:55:20 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 3 on worker 0
+2026-01-03 22:55:20 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 20/64
+2026-01-03 22:55:20 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 7 has completed epoch (4/4 chunks)
+2026-01-03 22:55:20 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-03 22:55:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:55:21 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 0
+2026-01-03 22:55:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 0
+2026-01-03 22:55:39 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:55:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-03 22:55:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 0
+2026-01-03 22:55:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 0 on worker 0
+2026-01-03 22:55:39 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 25/64
+2026-01-03 22:55:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 1
+2026-01-03 22:55:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:55:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 1
+2026-01-03 22:55:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 1
+2026-01-03 22:55:59 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:55:59 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 1
+2026-01-03 22:56:00 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 1
+2026-01-03 22:56:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 1 on worker 0
+2026-01-03 22:56:00 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 30/64
+2026-01-03 22:56:00 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 2
+2026-01-03 22:56:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:56:01 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 2
+2026-01-03 22:56:02 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 2
+2026-01-03 22:56:22 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:56:22 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 2
+2026-01-03 22:56:23 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 2
+2026-01-03 22:56:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 2 on worker 0
+2026-01-03 22:56:23 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 35/64
+2026-01-03 22:56:23 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 3
+2026-01-03 22:56:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:56:24 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 3
+2026-01-03 22:56:25 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 3
+2026-01-03 22:57:11 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:57:11 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 3
+2026-01-03 22:57:12 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 3
+2026-01-03 22:57:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 3 on worker 0
+2026-01-03 22:57:12 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 40/64
+2026-01-03 22:57:12 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 7 has completed epoch (4/4 chunks)
+2026-01-03 22:57:12 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-03 22:57:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:57:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 0
+2026-01-03 22:57:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 0
+2026-01-03 22:57:38 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:57:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-03 22:57:38 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 0
+2026-01-03 22:57:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 0 on worker 0
+2026-01-03 22:57:39 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 45/64
+2026-01-03 22:57:39 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 1
+2026-01-03 22:57:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:57:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 1
+2026-01-03 22:57:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 1
+2026-01-03 22:58:04 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:58:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 1
+2026-01-03 22:58:04 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 1
+2026-01-03 22:58:05 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 1 on worker 0
+2026-01-03 22:58:05 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 50/64
+2026-01-03 22:58:05 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 2
+2026-01-03 22:58:05 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:58:05 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 2
+2026-01-03 22:58:06 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 2
+2026-01-03 22:58:30 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:58:30 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 2
+2026-01-03 22:58:31 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 2
+2026-01-03 22:58:32 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 2 on worker 0
+2026-01-03 22:58:32 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 55/64
+2026-01-03 22:58:32 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 3
+2026-01-03 22:58:32 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:58:32 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 3
+2026-01-03 22:58:33 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 3
+2026-01-03 22:59:13 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:59:13 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 3
+2026-01-03 22:59:14 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 3
+2026-01-03 22:59:14 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 3 on worker 0
+2026-01-03 22:59:14 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 60/64
+2026-01-03 22:59:14 | tensorboard-demo-1 | controller | INFO | controller.py:603 | Run 7 has completed epoch (4/4 chunks)
+2026-01-03 22:59:14 | tensorboard-demo-1 | controller | DEBUG | controller.py:678 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-03 22:59:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:266 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-03 22:59:15 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:120 | Received run_fit on worker for run 7 with chunk 0
+2026-01-03 22:59:16 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:183 | Beginning training for run 7 on chunk 0
+2026-01-03 22:59:39 | tensorboard-demo-1 | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-03 22:59:39 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:214 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-03 22:59:40 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:246 | Completed training for run 7 on chunk 0
+2026-01-03 22:59:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:556 | Completed task: run 7, chunk 0 on worker 0
+2026-01-03 22:59:40 | tensorboard-demo-1 | controller | INFO | controller.py:557 | Run 7 completed steps - 64/64
+2026-01-03 22:59:40 | tensorboard-demo-1 | controller | INFO | controller.py:593 | Run 7 has completed all its epochs - steps 64/64
+2026-01-03 22:59:40 | tensorboard-demo-1 | controller | INFO | controller.py:656 | Scheduler indicates all runs have completed all chunks
+2026-01-03 22:59:40 | tensorboard-demo-1 | controller | DEBUG | controller.py:694 | Set experiment task to Idle.
+2026-01-03 22:59:40 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:154 | WorkerManager shutdown initiated...
+2026-01-03 22:59:40 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:158 | Signaling graceful shutdown...
+2026-01-03 22:59:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:296 | Worker 0 shutdown requested
+2026-01-03 22:59:41 | tensorboard-demo-1 | worker_0 | INFO | worker_manager.py:46 | Worker 0 process exiting
+2026-01-03 22:59:41 | tensorboard-demo-1 | worker_0 | DEBUG | worker.py:296 | Worker 0 shutdown requested
+2026-01-03 22:59:46 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:177 | All workers shutdown gracefully
+2026-01-03 22:59:46 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:154 | WorkerManager shutdown initiated...
+2026-01-03 22:59:46 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:158 | Signaling graceful shutdown...
+2026-01-03 22:59:46 | tensorboard-demo-1 | worker_manager | DEBUG | worker_manager.py:177 | All workers shutdown gracefully
+2026-01-03 23:00:17 | tensorboard-demo-1 | tensorboard-demo-1 | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-01-03 23:00:17 | tensorboard-demo-1 | tensorboard-demo-1 | INFO | experiment_utils.py:240 | Experiment tensorboard-demo-1 ended
