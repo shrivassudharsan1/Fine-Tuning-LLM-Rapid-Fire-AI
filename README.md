@@ -10,11 +10,11 @@ Fine-tunes GPT-2 using Supervised Fine-Tuning (SFT) with LoRA adapters on a cust
 
 Best Configuration (Config 1) at step 64:
 
-![Training Loss](final experiment metrics /trainloss.png)
+![Training Loss](final%20experiment%20metrics%20/trainloss.png)
 
-![Eval Loss](final experiment metrics /evalloss.png)
+![Eval Loss](final%20experiment%20metrics%20/evalloss.png)
 
-![ROUGE-L Score](final experiment metrics /RogueL.png)
+![ROUGE-L Score](final%20experiment%20metrics%20/RogueL.png)
 
 | Metric | Value |
 |--------|-------|
