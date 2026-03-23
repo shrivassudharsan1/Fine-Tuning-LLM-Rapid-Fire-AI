@@ -35,6 +35,8 @@ Peak RogueL (step 52): 0.06156
 Train loss (step 65): 1.356
 
 Step 64 selected because it balances token-level accuracy and sequence-level output quality, avoiding overfitting observed at later steps
+<img width="757" height="358" alt="image" src="https://github.com/user-attachments/assets/60924887-6539-4f4c-b1ec-b56ed804f5c1" />
+
 
 ## Usage
 
